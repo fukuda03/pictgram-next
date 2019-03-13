@@ -15,8 +15,8 @@ class TopicsController < ApplicationController
     else
       flash.now[:danger] = "投稿に失敗しました"
       render :new
+    end
   end
-end
 
 private
  def topic_params
