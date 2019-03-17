@@ -15,9 +15,7 @@
             <i class="far fa-heart favorite-active"></i>
             <% end %>
           <% end %>
-          <% @topics.each do |topic| %>
             <%= topic.favorite_users.count %>回いいねされました。
-          <% end %>
 
             <%= link_to new_comment_path(topic_id: topic.id, name: "test"), method: :get do %>
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
