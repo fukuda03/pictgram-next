@@ -52,4 +52,4 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  databese: [pictgram]
+  databese: []
