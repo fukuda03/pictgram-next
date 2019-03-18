@@ -15,17 +15,21 @@
             <i class="far fa-heart favorite-active"></i>
             <% end %>
           <% end %>
-            <%= topic.favorite_users.count %>回いいねされました。
+            <%= topic.favorite_users.count %>
 
             <%= link_to new_comment_path(topic_id: topic.id, name: "test"), method: :get do %>
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <% end %>
-
+            
+            <%= link_to topics_path(topic_id: topic.id), method: :delete do %>
+            <i class="far fa-trash-alt trash"></i>
+            <% end %>
 
            <p class="topic-text"><%= topic.description %></p>
            <h4 class="topic-text">コメント</h4>
            <% topic.comments.each do |comment| %>
            <p class="topic-text"><%= comment.description %></p>
+
            <% end %>
          </div>
        </div>
