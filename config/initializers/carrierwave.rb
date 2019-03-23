@@ -7,5 +7,4 @@ CarrierWave.configure do |config|
   }
 
   config.fog_directory  = 'rails-topics'
-  config.cache_storage = :fog
 end
