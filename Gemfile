@@ -76,3 +76,4 @@ gem "jquery-rails"
 gem 'bcrypt'
 gem "carrierwave"
 gem "font-awesome-rails"
+gem 'fog'
