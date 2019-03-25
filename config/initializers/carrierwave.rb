@@ -6,6 +6,6 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'rails-topics'
+  config.fog_directory  = 'pictgram-topics'
   config.cache_storage = :fog
 end
