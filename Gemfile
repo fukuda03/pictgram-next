@@ -77,3 +77,4 @@ gem 'bcrypt'
 gem "carrierwave"
 gem "font-awesome-rails"
 gem 'fog'
+gem "aws-sdk-s3", require: false #追記
